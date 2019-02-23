@@ -1,0 +1,2622 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>WindowMain</class>
+ <widget class="QMainWindow" name="WindowMain">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1786</width>
+    <height>861</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string notr="true">WindowMain</string>
+  </property>
+  <property name="locale">
+   <locale language="English" country="UnitedStates"/>
+  </property>
+  <widget class="QWidget" name="widgetCentral">
+   <property name="contextMenuPolicy">
+    <enum>Qt::ActionsContextMenu</enum>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_2">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <item row="0" column="0">
+     <widget class="FrameHeader" name="frameHeader">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <property name="lineWidth">
+       <number>0</number>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_4">
+       <property name="leftMargin">
+        <number>20</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>40</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="labelHeader">
+         <property name="text">
+          <string>Kirin Label Assistant</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="frameSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>1293</width>
+           <height>32</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="layoutHeader">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <item>
+          <layout class="QHBoxLayout" name="layoutHeaderButton">
+           <property name="spacing">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="QToolButton" name="buttonChangeTheme">
+             <property name="minimumSize">
+              <size>
+               <width>32</width>
+               <height>32</height>
+              </size>
+             </property>
+             <property name="toolTip">
+              <string>Theme</string>
+             </property>
+             <property name="statusTip">
+              <string>Change different window theme</string>
+             </property>
+             <property name="whatsThis">
+              <string notr="true">Theme change</string>
+             </property>
+             <property name="text">
+              <string notr="true">...</string>
+             </property>
+             <property name="icon">
+              <iconset>
+               <selectedoff>:/icons/icons/ic_palette_white_24dp.png</selectedoff>
+              </iconset>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QToolButton" name="buttonAbout">
+             <property name="minimumSize">
+              <size>
+               <width>32</width>
+               <height>32</height>
+              </size>
+             </property>
+             <property name="toolTip">
+              <string>About</string>
+             </property>
+             <property name="statusTip">
+              <string>About Kirin Label Assistant</string>
+             </property>
+             <property name="whatsThis">
+              <string notr="true">About</string>
+             </property>
+             <property name="text">
+              <string notr="true">...</string>
+             </property>
+             <property name="icon">
+              <iconset>
+               <selectedoff>:/icons/icons/ic_info_outline_white_24dp.png</selectedoff>
+              </iconset>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="headerSpacer">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Minimum</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>0</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QToolButton" name="buttonMinimum">
+             <property name="minimumSize">
+              <size>
+               <width>48</width>
+               <height>32</height>
+              </size>
+             </property>
+             <property name="toolTip">
+              <string>Minimized</string>
+             </property>
+             <property name="statusTip">
+              <string>Minimized the window</string>
+             </property>
+             <property name="whatsThis">
+              <string notr="true">Minimized</string>
+             </property>
+             <property name="text">
+              <string notr="true">...</string>
+             </property>
+             <property name="icon">
+              <iconset resource="../resource/kirinresource.qrc">
+               <normaloff>:/icons/icons/ic_remove_white_24dp.png</normaloff>:/icons/icons/ic_remove_white_24dp.png</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>24</width>
+               <height>24</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QToolButton" name="buttonSizeContorol">
+             <property name="minimumSize">
+              <size>
+               <width>48</width>
+               <height>32</height>
+              </size>
+             </property>
+             <property name="toolTip">
+              <string>Size Change</string>
+             </property>
+             <property name="statusTip">
+              <string>Maximized or normal window</string>
+             </property>
+             <property name="whatsThis">
+              <string notr="true">Size Change</string>
+             </property>
+             <property name="text">
+              <string notr="true">...</string>
+             </property>
+             <property name="icon">
+              <iconset resource="../resource/kirinresource.qrc">
+               <normaloff>:/icons/icons/ic_crop_square_white_24dp.png</normaloff>:/icons/icons/ic_crop_square_white_24dp.png</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>24</width>
+               <height>24</height>
+              </size>
+             </property>
+             <property name="checkable">
+              <bool>true</bool>
+             </property>
+             <property name="checked">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QToolButton" name="buttonExit">
+             <property name="minimumSize">
+              <size>
+               <width>48</width>
+               <height>32</height>
+              </size>
+             </property>
+             <property name="toolTip">
+              <string>Exit(Ctrl+Q)</string>
+             </property>
+             <property name="statusTip">
+              <string>Close the window</string>
+             </property>
+             <property name="whatsThis">
+              <string notr="true">Exit</string>
+             </property>
+             <property name="text">
+              <string notr="true">...</string>
+             </property>
+             <property name="icon">
+              <iconset resource="../resource/kirinresource.qrc">
+               <normaloff>:/icons/icons/ic_close_white_24dp.png</normaloff>:/icons/icons/ic_close_white_24dp.png</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>24</width>
+               <height>24</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <spacer name="headerlSpacer">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Minimum</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>8</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QSplitter" name="splitterHorizontal">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <widget class="QSplitter" name="splitterVertical_Left">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <widget class="QGroupBox" name="boxFile">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Maximum" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>360</width>
+          <height>540</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>420</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="title">
+         <string>File</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+        </property>
+        <property name="flat">
+         <bool>false</bool>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <property name="spacing">
+          <number>3</number>
+         </property>
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>11</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <layout class="QHBoxLayout" name="fileLayout_Up">
+           <property name="leftMargin">
+            <number>8</number>
+           </property>
+           <property name="rightMargin">
+            <number>8</number>
+           </property>
+           <property name="bottomMargin">
+            <number>4</number>
+           </property>
+           <item>
+            <widget class="QToolButton" name="buttonOpen">
+             <property name="minimumSize">
+              <size>
+               <width>72</width>
+               <height>36</height>
+              </size>
+             </property>
+             <property name="statusTip">
+              <string>Change directory of images</string>
+             </property>
+             <property name="text">
+              <string>Open</string>
+             </property>
+             <property name="icon">
+              <iconset resource="../resource/kirinresource.qrc">
+               <normaloff>:/icons/icons/ic_folder_white_24dp.png</normaloff>
+               <disabledoff>:/icons/icons/ic_folder_black_24dp.png</disabledoff>:/icons/icons/ic_folder_white_24dp.png</iconset>
+             </property>
+             <property name="toolButtonStyle">
+              <enum>Qt::ToolButtonTextBesideIcon</enum>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QTextBrowser" name="textBrowserPath">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>24</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>26</height>
+              </size>
+             </property>
+             <property name="lineWidth">
+              <number>0</number>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QScrollArea" name="scrollAreaFiles">
+           <property name="widgetResizable">
+            <bool>true</bool>
+           </property>
+           <widget class="QWidget" name="scrollAreaContentsFiles">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>0</y>
+              <width>352</width>
+              <height>456</height>
+             </rect>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_5">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QTableWidget" name="tableFileList"/>
+             </item>
+            </layout>
+           </widget>
+          </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="fileLayout_down">
+           <item>
+            <spacer name="fileSpacer">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>148</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QLabel" name="labelFileInfo">
+             <property name="statusTip">
+              <string>Amount of images in directory</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QGroupBox" name="boxMode">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>230</height>
+         </size>
+        </property>
+        <property name="title">
+         <string>Mode</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_4">
+         <property name="spacing">
+          <number>11</number>
+         </property>
+         <item>
+          <widget class="QCommandLinkButton" name="buttonFileMode">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>80</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Segoe UI</family>
+             <weight>50</weight>
+             <bold>false</bold>
+             <kerning>true</kerning>
+            </font>
+           </property>
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="statusTip">
+            <string>Choose directory contains images</string>
+           </property>
+           <property name="whatsThis">
+            <string notr="true">File Mode</string>
+           </property>
+           <property name="text">
+            <string>File Mode</string>
+           </property>
+           <property name="icon">
+            <iconset resource="../resource/kirinresource.qrc">
+             <normaloff>:/icons/icons/file.png</normaloff>:/icons/icons/file.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>48</width>
+             <height>48</height>
+            </size>
+           </property>
+           <property name="description">
+            <string>Open a directory and label exists images.</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCommandLinkButton" name="buttonCameraMode">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>80</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Segoe UI</family>
+             <weight>50</weight>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="statusTip">
+            <string>Capture and save images by camera</string>
+           </property>
+           <property name="whatsThis">
+            <string notr="true">Camera Mode</string>
+           </property>
+           <property name="text">
+            <string>Camera Mode</string>
+           </property>
+           <property name="icon">
+            <iconset resource="../resource/kirinresource.qrc">
+             <normaloff>:/icons/icons/webcam.png</normaloff>:/icons/icons/webcam.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>48</width>
+             <height>48</height>
+            </size>
+           </property>
+           <property name="description">
+            <string>Realtime text scene detect, save labels with image.</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="boxSpacer">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+      <widget class="QSplitter" name="splitterVertical_Central">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <widget class="QGroupBox" name="boxEast">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>120</height>
+         </size>
+        </property>
+        <property name="title">
+         <string>EAST Setting</string>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <property name="spacing">
+          <number>10</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="labelSettingSize">
+           <property name="minimumSize">
+            <size>
+             <width>104</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>InputSize:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="comboSettingSize">
+           <property name="statusTip">
+            <string>Change image input size of EAST</string>
+           </property>
+           <property name="whatsThis">
+            <string notr="true"/>
+           </property>
+           <item>
+            <property name="text">
+             <string notr="true">64x64</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string notr="true">128x128</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string notr="true">192x192</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string notr="true">256x256</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string notr="true">320x320</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string notr="true">384x384</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string notr="true">448x448</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string notr="true">512x512</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <spacer name="settingSpacer">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Maximum</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QLabel" name="labelSettingConf">
+           <property name="minimumSize">
+            <size>
+             <width>125</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>EAST Thershold: </string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSlider" name="sliderSettingConf">
+           <property name="minimumSize">
+            <size>
+             <width>80</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="statusTip">
+            <string>Change EAST thershold</string>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="settingSpacer_2">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Maximum</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QLabel" name="labelSettingNms">
+           <property name="minimumSize">
+            <size>
+             <width>125</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="whatsThis">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>NMS Thershold: </string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSlider" name="sliderSettingNms">
+           <property name="minimumSize">
+            <size>
+             <width>80</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="statusTip">
+            <string>Change NMSbox thershold</string>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="buttonDefaultSet">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="statusTip">
+            <string>Use default setting for EAST</string>
+           </property>
+           <property name="whatsThis">
+            <string notr="true">Default setting</string>
+           </property>
+           <property name="text">
+            <string>Default</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="buttonEASTSet">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="statusTip">
+            <string>Apply setting change for EAST</string>
+           </property>
+           <property name="whatsThis">
+            <string notr="true">Apply change</string>
+           </property>
+           <property name="text">
+            <string>Apply</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="buttonEASTPath">
+           <property name="statusTip">
+            <string>Change EAST model path</string>
+           </property>
+           <property name="whatsThis">
+            <string notr="true">EAST model path</string>
+           </property>
+           <property name="text">
+            <string>EAST Path</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QGroupBox" name="graphicsViewDisplay">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>720</width>
+          <height>720</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="title">
+         <string>Display</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_6">
+         <item>
+          <widget class="WidgetGraphicsView" name="graphicsView">
+           <property name="minimumSize">
+            <size>
+             <width>540</width>
+             <height>160</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>16777215</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="displayLayout">
+           <property name="leftMargin">
+            <number>10</number>
+           </property>
+           <property name="rightMargin">
+            <number>10</number>
+           </property>
+           <item>
+            <widget class="QLabel" name="labelDisplayZoom">
+             <property name="statusTip">
+              <string>Scale of image</string>
+             </property>
+             <property name="whatsThis">
+              <string/>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="displaySpacer">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>78</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QLabel" name="labelDisplayTime">
+             <property name="statusTip">
+              <string>Process time</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="labelDisplayInfo">
+             <property name="statusTip">
+              <string>Information of image</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+      <widget class="QSplitter" name="splitterVertical_Right">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <widget class="QGroupBox" name="boxCoordinateList">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>400</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>560</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="title">
+         <string>CoordinateList</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <property name="spacing">
+          <number>4</number>
+         </property>
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="labelCoordinateList">
+           <property name="statusTip">
+            <string>Current amount of labels</string>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QScrollArea" name="scrollAreaCoordinateList">
+           <property name="widgetResizable">
+            <bool>true</bool>
+           </property>
+           <widget class="QWidget" name="scrollAreaContentsCoordinateList">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>0</y>
+              <width>406</width>
+              <height>272</height>
+             </rect>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_2">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QTableWidget" name="tableCoordinateDisplay">
+               <property name="statusTip">
+                <string>Coordinate of all labels</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="coordinateLayout">
+           <property name="spacing">
+            <number>0</number>
+           </property>
+           <property name="leftMargin">
+            <number>12</number>
+           </property>
+           <property name="topMargin">
+            <number>8</number>
+           </property>
+           <property name="rightMargin">
+            <number>12</number>
+           </property>
+           <property name="bottomMargin">
+            <number>8</number>
+           </property>
+           <item>
+            <widget class="QToolButton" name="buttonUpdateLabels">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>96</width>
+               <height>48</height>
+              </size>
+             </property>
+             <property name="statusTip">
+              <string>Update labels using EAST</string>
+             </property>
+             <property name="whatsThis">
+              <string notr="true"/>
+             </property>
+             <property name="text">
+              <string>Update</string>
+             </property>
+             <property name="icon">
+              <iconset resource="../resource/kirinresource.qrc">
+               <normaloff>:/icons/icons/east.png</normaloff>:/icons/icons/east.png</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>32</width>
+               <height>32</height>
+              </size>
+             </property>
+             <property name="toolButtonStyle">
+              <enum>Qt::ToolButtonTextBesideIcon</enum>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QToolButton" name="buttonAddLabel">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>96</width>
+               <height>48</height>
+              </size>
+             </property>
+             <property name="statusTip">
+              <string>Add a new label</string>
+             </property>
+             <property name="whatsThis">
+              <string notr="true"/>
+             </property>
+             <property name="text">
+              <string>Add</string>
+             </property>
+             <property name="icon">
+              <iconset resource="../resource/kirinresource.qrc">
+               <normaloff>:/icons/icons/add.png</normaloff>:/icons/icons/add.png</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>32</width>
+               <height>32</height>
+              </size>
+             </property>
+             <property name="toolButtonStyle">
+              <enum>Qt::ToolButtonTextBesideIcon</enum>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QToolButton" name="buttonDeleteLabel">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>96</width>
+               <height>48</height>
+              </size>
+             </property>
+             <property name="statusTip">
+              <string>Delete selected label</string>
+             </property>
+             <property name="whatsThis">
+              <string notr="true"/>
+             </property>
+             <property name="text">
+              <string>Delete</string>
+             </property>
+             <property name="icon">
+              <iconset resource="../resource/kirinresource.qrc">
+               <normaloff>:/icons/icons/delete.png</normaloff>:/icons/icons/delete.png</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>32</width>
+               <height>32</height>
+              </size>
+             </property>
+             <property name="toolButtonStyle">
+              <enum>Qt::ToolButtonTextBesideIcon</enum>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QToolButton" name="buttonClearLabels">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>96</width>
+               <height>48</height>
+              </size>
+             </property>
+             <property name="statusTip">
+              <string>Delete all labels</string>
+             </property>
+             <property name="whatsThis">
+              <string notr="true"/>
+             </property>
+             <property name="text">
+              <string>Clear</string>
+             </property>
+             <property name="icon">
+              <iconset resource="../resource/kirinresource.qrc">
+               <normaloff>:/icons/icons/close.png</normaloff>:/icons/icons/close.png</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>32</width>
+               <height>32</height>
+              </size>
+             </property>
+             <property name="toolButtonStyle">
+              <enum>Qt::ToolButtonTextBesideIcon</enum>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QGroupBox" name="boxCoordinateSet">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>160</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>480</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="statusTip">
+         <string/>
+        </property>
+        <property name="title">
+         <string>CoordinateSet</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout">
+         <item row="0" column="0">
+          <widget class="QLabel" name="labelUpLeftX">
+           <property name="statusTip">
+            <string/>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::LeftToRight</enum>
+           </property>
+           <property name="text">
+            <string>TopLeft X</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QSpinBox" name="spinCoordUpLeftX">
+           <property name="minimumSize">
+            <size>
+             <width>54</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="statusTip">
+            <string>Switch current polygon's coordinate</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="2">
+          <widget class="QLabel" name="labelUpLeftY">
+           <property name="text">
+            <string>TopLeft Y</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="3">
+          <widget class="QSpinBox" name="spinCoordUpLeftY">
+           <property name="minimumSize">
+            <size>
+             <width>54</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="statusTip">
+            <string>Switch current polygon's coordinate</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="labelUpRightX">
+           <property name="text">
+            <string>TopRight X</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QSpinBox" name="spinCoordUpRightX">
+           <property name="minimumSize">
+            <size>
+             <width>54</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="statusTip">
+            <string>Switch current polygon's coordinate</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="2">
+          <widget class="QLabel" name="labelUpRightY">
+           <property name="text">
+            <string>TopRight Y</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="3">
+          <widget class="QSpinBox" name="spinCoordUpRightY">
+           <property name="minimumSize">
+            <size>
+             <width>54</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="statusTip">
+            <string>Switch current polygon's coordinate</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="labelDownLeftX">
+           <property name="text">
+            <string>BottomLeft X</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QSpinBox" name="spinCoordDownLeftX">
+           <property name="minimumSize">
+            <size>
+             <width>54</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="statusTip">
+            <string>Switch current polygon's coordinate</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="2">
+          <widget class="QLabel" name="labelDownLeftY">
+           <property name="text">
+            <string>BottomLeft Y</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="3">
+          <widget class="QSpinBox" name="spinCoordDownLeftY">
+           <property name="minimumSize">
+            <size>
+             <width>54</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="statusTip">
+            <string>Switch current polygon's coordinate</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLabel" name="labelDownRightX">
+           <property name="text">
+            <string>BottomRight X</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <widget class="QSpinBox" name="spinCoordDownRightX">
+           <property name="minimumSize">
+            <size>
+             <width>54</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="statusTip">
+            <string>Switch current polygon's coordinate</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="2">
+          <widget class="QLabel" name="labelDownRightY">
+           <property name="text">
+            <string>BottomRight Y</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="3">
+          <widget class="QSpinBox" name="spinCoordDownRightY">
+           <property name="minimumSize">
+            <size>
+             <width>54</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="statusTip">
+            <string>Switch current polygon's coordinate</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QGroupBox" name="boxOperation">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>180</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>480</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="title">
+         <string>Operation</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <spacer name="operationSpacer">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QStackedWidget" name="stackedOperation">
+           <property name="currentIndex">
+            <number>0</number>
+           </property>
+           <widget class="QWidget" name="pageFileMode">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>128</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>192</height>
+             </size>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout">
+             <property name="spacing">
+              <number>8</number>
+             </property>
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <spacer name="fileModeSpacer_2">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QDial" name="dialZoom">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>192</width>
+                 <height>192</height>
+                </size>
+               </property>
+               <property name="toolTip">
+                <string>Scale</string>
+               </property>
+               <property name="statusTip">
+                <string>Adjust image's scale</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="fileModeSpacer_3">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeType">
+                <enum>QSizePolicy::Maximum</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>50</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <layout class="QVBoxLayout" name="layoutFIleButton">
+               <property name="spacing">
+                <number>0</number>
+               </property>
+               <property name="sizeConstraint">
+                <enum>QLayout::SetDefaultConstraint</enum>
+               </property>
+               <property name="leftMargin">
+                <number>0</number>
+               </property>
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>0</number>
+               </property>
+               <item>
+                <widget class="QToolButton" name="buttonLastImage">
+                 <property name="enabled">
+                  <bool>false</bool>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>48</width>
+                   <height>48</height>
+                  </size>
+                 </property>
+                 <property name="toolTip">
+                  <string>Last image</string>
+                 </property>
+                 <property name="statusTip">
+                  <string>Last image</string>
+                 </property>
+                 <property name="text">
+                  <string notr="true">Last</string>
+                 </property>
+                 <property name="icon">
+                  <iconset resource="../resource/kirinresource.qrc">
+                   <normaloff>:/icons/icons/ic_navigate_before_white_48dp.png</normaloff>
+                   <disabledoff>:/icons/icons/ic_navigate_before_black_48dp.png</disabledoff>:/icons/icons/ic_navigate_before_white_48dp.png</iconset>
+                 </property>
+                 <property name="iconSize">
+                  <size>
+                   <width>64</width>
+                   <height>64</height>
+                  </size>
+                 </property>
+                 <property name="toolButtonStyle">
+                  <enum>Qt::ToolButtonIconOnly</enum>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QToolButton" name="buttonNextImage">
+                 <property name="enabled">
+                  <bool>false</bool>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>48</width>
+                   <height>48</height>
+                  </size>
+                 </property>
+                 <property name="toolTip">
+                  <string>Next image</string>
+                 </property>
+                 <property name="statusTip">
+                  <string>Next image</string>
+                 </property>
+                 <property name="text">
+                  <string notr="true">Next</string>
+                 </property>
+                 <property name="icon">
+                  <iconset resource="../resource/kirinresource.qrc">
+                   <normaloff>:/icons/icons/ic_navigate_next_white_48dp.png</normaloff>
+                   <disabledoff>:/icons/icons/ic_navigate_next_black_48dp.png</disabledoff>:/icons/icons/ic_navigate_next_white_48dp.png</iconset>
+                 </property>
+                 <property name="iconSize">
+                  <size>
+                   <width>64</width>
+                   <height>64</height>
+                  </size>
+                 </property>
+                 <property name="toolButtonStyle">
+                  <enum>Qt::ToolButtonIconOnly</enum>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <spacer name="fileModeSpacer_4">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QToolButton" name="buttonSaveNext">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>128</width>
+                 <height>128</height>
+                </size>
+               </property>
+               <property name="statusTip">
+                <string>Save the labels</string>
+               </property>
+               <property name="text">
+                <string notr="true">Save</string>
+               </property>
+               <property name="icon">
+                <iconset resource="../resource/kirinresource.qrc">
+                 <normaloff>:/icons/icons/kIRIN.png</normaloff>:/icons/icons/kIRIN.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>128</width>
+                 <height>128</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="fileModeSpacer">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QWidget" name="pageCameraMode">
+            <layout class="QHBoxLayout" name="horizontalLayout_7">
+             <item>
+              <widget class="QToolButton" name="buttonDiscard">
+               <property name="minimumSize">
+                <size>
+                 <width>72</width>
+                 <height>72</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>72</width>
+                 <height>72</height>
+                </size>
+               </property>
+               <property name="statusTip">
+                <string>Discard image</string>
+               </property>
+               <property name="text">
+                <string>Cancel</string>
+               </property>
+               <property name="icon">
+                <iconset resource="../resource/kirinresource.qrc">
+                 <normaloff>:/icons/icons/cross.png</normaloff>:/icons/icons/cross.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>64</width>
+                 <height>48</height>
+                </size>
+               </property>
+               <property name="toolButtonStyle">
+                <enum>Qt::ToolButtonTextUnderIcon</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QToolButton" name="buttonCapture">
+               <property name="minimumSize">
+                <size>
+                 <width>96</width>
+                 <height>96</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>96</width>
+                 <height>96</height>
+                </size>
+               </property>
+               <property name="statusTip">
+                <string>Capture by camera</string>
+               </property>
+               <property name="text">
+                <string>Capture</string>
+               </property>
+               <property name="icon">
+                <iconset resource="../resource/kirinresource.qrc">
+                 <normaloff>:/icons/icons/camera.png</normaloff>:/icons/icons/camera.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>64</width>
+                 <height>64</height>
+                </size>
+               </property>
+               <property name="toolButtonStyle">
+                <enum>Qt::ToolButtonTextUnderIcon</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QToolButton" name="buttonFinish">
+               <property name="minimumSize">
+                <size>
+                 <width>72</width>
+                 <height>72</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>72</width>
+                 <height>72</height>
+                </size>
+               </property>
+               <property name="statusTip">
+                <string>Save image with labels</string>
+               </property>
+               <property name="text">
+                <string>Ok</string>
+               </property>
+               <property name="icon">
+                <iconset resource="../resource/kirinresource.qrc">
+                 <normaloff>:/icons/icons/checkmark.png</normaloff>:/icons/icons/checkmark.png</iconset>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>64</width>
+                 <height>48</height>
+                </size>
+               </property>
+               <property name="toolButtonStyle">
+                <enum>Qt::ToolButtonTextUnderIcon</enum>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </widget>
+         </item>
+         <item>
+          <spacer name="operationSpacr_2">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="acceptDrops">
+    <bool>false</bool>
+   </property>
+   <property name="statusTip">
+    <string/>
+   </property>
+   <property name="movable">
+    <bool>false</bool>
+   </property>
+   <property name="allowedAreas">
+    <set>Qt::LeftToolBarArea</set>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>48</width>
+     <height>48</height>
+    </size>
+   </property>
+   <property name="floatable">
+    <bool>false</bool>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>LeftToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionLogo"/>
+   <addaction name="actionOpen"/>
+   <addaction name="separator"/>
+   <addaction name="actionSaveNext"/>
+   <addaction name="actionLastImage"/>
+   <addaction name="actionNextImage"/>
+   <addaction name="actionSaveCapture"/>
+   <addaction name="actionCapture"/>
+   <addaction name="separator"/>
+   <addaction name="actionNewLabel"/>
+   <addaction name="actionDeleteLabel"/>
+   <addaction name="actionClearLabels"/>
+   <addaction name="actionUpdateLabels"/>
+   <addaction name="separator"/>
+   <addaction name="actionZoomIn"/>
+   <addaction name="actionZoomOut"/>
+   <addaction name="actionBestFit"/>
+   <addaction name="actionOriginalSize"/>
+   <addaction name="separator"/>
+   <addaction name="actionEASTSet"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>22</height>
+    </size>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::DefaultContextMenu</enum>
+   </property>
+  </widget>
+  <action name="actionOpen">
+   <property name="icon">
+    <iconset resource="../resource/kirinresource.qrc">
+     <normaloff>:/icons/icons/ic_folder_open_white_24dp.png</normaloff>
+     <disabledoff>:/icons/icons/ic_folder_open_black_24dp.png</disabledoff>
+     <disabledon>:/icons/icons/ic_folder_open_black_24dp.png</disabledon>
+     <activeoff>:/icons/icons/ic_folder_open_white_24dp.png</activeoff>:/icons/icons/ic_folder_open_white_24dp.png</iconset>
+   </property>
+   <property name="text">
+    <string notr="true">Open(&amp;W)</string>
+   </property>
+   <property name="iconText">
+    <string notr="true">Open</string>
+   </property>
+   <property name="toolTip">
+    <string>Open(Ctrl+O)</string>
+   </property>
+   <property name="statusTip">
+    <string>Change directory of images</string>
+   </property>
+   <property name="whatsThis">
+    <string notr="true"/>
+   </property>
+   <property name="shortcut">
+    <string notr="true">Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionNewLabel">
+   <property name="icon">
+    <iconset resource="../resource/kirinresource.qrc">
+     <normaloff>:/icons/icons/ic_library_add_white_24dp.png</normaloff>
+     <disabledoff>:/icons/icons/ic_library_add_black_24dp.png</disabledoff>
+     <activeoff>:/icons/icons/ic_library_add_white_24dp.png</activeoff>:/icons/icons/ic_library_add_white_24dp.png</iconset>
+   </property>
+   <property name="text">
+    <string notr="true">New Label(&amp;N)</string>
+   </property>
+   <property name="iconText">
+    <string notr="true">New Label</string>
+   </property>
+   <property name="toolTip">
+    <string>New Label(Ctrl+A)</string>
+   </property>
+   <property name="statusTip">
+    <string>Add a new label</string>
+   </property>
+   <property name="whatsThis">
+    <string notr="true"/>
+   </property>
+   <property name="shortcut">
+    <string notr="true">Ctrl+A</string>
+   </property>
+  </action>
+  <action name="actionDeleteLabel">
+   <property name="icon">
+    <iconset resource="../resource/kirinresource.qrc">
+     <normaloff>:/icons/icons/ic_delete_white_24dp.png</normaloff>
+     <disabledoff>:/icons/icons/ic_delete_black_24dp.png</disabledoff>
+     <activeoff>:/icons/icons/ic_delete_white_24dp.png</activeoff>:/icons/icons/ic_delete_white_24dp.png</iconset>
+   </property>
+   <property name="text">
+    <string notr="true">Delete Label(&amp;D)</string>
+   </property>
+   <property name="iconText">
+    <string notr="true">Delete Label</string>
+   </property>
+   <property name="toolTip">
+    <string>Delete Label(Del)</string>
+   </property>
+   <property name="statusTip">
+    <string>Delete selected label</string>
+   </property>
+   <property name="whatsThis">
+    <string notr="true"/>
+   </property>
+   <property name="shortcut">
+    <string notr="true">Del</string>
+   </property>
+   <property name="shortcutContext">
+    <enum>Qt::WindowShortcut</enum>
+   </property>
+  </action>
+  <action name="actionZoomIn">
+   <property name="icon">
+    <iconset resource="../resource/kirinresource.qrc">
+     <normaloff>:/icons/icons/ic_zoom_in_white_24dp.png</normaloff>
+     <disabledoff>:/icons/icons/ic_zoom_in_black_24dp.png</disabledoff>
+     <activeoff>:/icons/icons/ic_zoom_in_white_24dp.png</activeoff>:/icons/icons/ic_zoom_in_white_24dp.png</iconset>
+   </property>
+   <property name="text">
+    <string notr="true">Zoom In(&amp;I)</string>
+   </property>
+   <property name="iconText">
+    <string notr="true">Zoom In</string>
+   </property>
+   <property name="toolTip">
+    <string>Zoom In(PageUp)</string>
+   </property>
+   <property name="statusTip">
+    <string>Zoom in</string>
+   </property>
+   <property name="whatsThis">
+    <string notr="true"/>
+   </property>
+   <property name="shortcut">
+    <string notr="true">PgUp</string>
+   </property>
+  </action>
+  <action name="actionZoomOut">
+   <property name="icon">
+    <iconset resource="../resource/kirinresource.qrc">
+     <normaloff>:/icons/icons/ic_zoom_out_white_24dp.png</normaloff>
+     <disabledoff>:/icons/icons/ic_zoom_out_black_24dp.png</disabledoff>
+     <activeoff>:/icons/icons/ic_zoom_out_white_24dp.png</activeoff>:/icons/icons/ic_zoom_out_white_24dp.png</iconset>
+   </property>
+   <property name="text">
+    <string notr="true">Zoom Out(&amp;O)</string>
+   </property>
+   <property name="iconText">
+    <string notr="true">Zoom Out</string>
+   </property>
+   <property name="toolTip">
+    <string>Zoom Out(PageDown)</string>
+   </property>
+   <property name="statusTip">
+    <string>Zoom out</string>
+   </property>
+   <property name="whatsThis">
+    <string notr="true"/>
+   </property>
+   <property name="shortcut">
+    <string notr="true">PgDown</string>
+   </property>
+  </action>
+  <action name="actionBestFit">
+   <property name="icon">
+    <iconset resource="../resource/kirinresource.qrc">
+     <normaloff>:/icons/icons/ic_settings_overscan_white_24dp.png</normaloff>
+     <disabledoff>:/icons/icons/ic_settings_overscan_black_24dp.png</disabledoff>
+     <activeoff>:/icons/icons/ic_settings_overscan_white_24dp.png</activeoff>:/icons/icons/ic_settings_overscan_white_24dp.png</iconset>
+   </property>
+   <property name="text">
+    <string notr="true">Best Fit(&amp;B)</string>
+   </property>
+   <property name="iconText">
+    <string notr="true">Best Fit</string>
+   </property>
+   <property name="toolTip">
+    <string>Best Fit(Ctrl+B)</string>
+   </property>
+   <property name="statusTip">
+    <string>Image fit the screen</string>
+   </property>
+   <property name="whatsThis">
+    <string notr="true"/>
+   </property>
+   <property name="shortcut">
+    <string notr="true">Ctrl+B</string>
+   </property>
+  </action>
+  <action name="actionClearLabels">
+   <property name="icon">
+    <iconset resource="../resource/kirinresource.qrc">
+     <normaloff>:/icons/icons/ic_clear_white_24dp.png</normaloff>
+     <disabledoff>:/icons/icons/ic_clear_black_24dp.png</disabledoff>
+     <activeoff>:/icons/icons/ic_clear_white_24dp.png</activeoff>:/icons/icons/ic_clear_white_24dp.png</iconset>
+   </property>
+   <property name="text">
+    <string notr="true">Clear All Labels(&amp;R)</string>
+   </property>
+   <property name="iconText">
+    <string notr="true">Clear All Labels</string>
+   </property>
+   <property name="toolTip">
+    <string>Clear All Labels(Ctrl+R)</string>
+   </property>
+   <property name="statusTip">
+    <string>Delete all labels</string>
+   </property>
+   <property name="whatsThis">
+    <string notr="true"/>
+   </property>
+   <property name="shortcut">
+    <string notr="true">Ctrl+R</string>
+   </property>
+  </action>
+  <action name="actionOriginalSize">
+   <property name="icon">
+    <iconset resource="../resource/kirinresource.qrc">
+     <normaloff>:/icons/icons/ic_image_white_24dp.png</normaloff>
+     <disabledoff>:/icons/icons/ic_image_black_24dp.png</disabledoff>
+     <activeoff>:/icons/icons/ic_image_white_24dp.png</activeoff>:/icons/icons/ic_image_white_24dp.png</iconset>
+   </property>
+   <property name="text">
+    <string notr="true">Original Size(&amp;R)</string>
+   </property>
+   <property name="iconText">
+    <string notr="true">Original Size</string>
+   </property>
+   <property name="toolTip">
+    <string>Original Size(Ctrl+G)</string>
+   </property>
+   <property name="statusTip">
+    <string>Original size of image</string>
+   </property>
+   <property name="whatsThis">
+    <string notr="true"/>
+   </property>
+   <property name="shortcut">
+    <string notr="true">Ctrl+G</string>
+   </property>
+  </action>
+  <action name="actionUpdateLabels">
+   <property name="icon">
+    <iconset resource="../resource/kirinresource.qrc">
+     <normaloff>:/icons/icons/ic_update_white_24dp.png</normaloff>
+     <disabledoff>:/icons/icons/ic_update_black_24dp.png</disabledoff>
+     <activeoff>:/icons/icons/ic_update_white_24dp.png</activeoff>:/icons/icons/ic_update_white_24dp.png</iconset>
+   </property>
+   <property name="text">
+    <string notr="true">Update Labels(&amp;U)</string>
+   </property>
+   <property name="iconText">
+    <string notr="true">Update Labels</string>
+   </property>
+   <property name="toolTip">
+    <string>Update Labels(Ctrl+U)</string>
+   </property>
+   <property name="statusTip">
+    <string>Update labels using EAST</string>
+   </property>
+   <property name="whatsThis">
+    <string notr="true"/>
+   </property>
+   <property name="shortcut">
+    <string notr="true">Ctrl+U</string>
+   </property>
+  </action>
+  <action name="actionLoad">
+   <property name="icon">
+    <iconset resource="../resource/kirinresource.qrc">
+     <normaloff>:/icons/icons/ic_folder_open_white_24dp.png</normaloff>:/icons/icons/ic_folder_open_white_24dp.png</iconset>
+   </property>
+   <property name="text">
+    <string notr="true">Load</string>
+   </property>
+   <property name="iconText">
+    <string notr="true">Load</string>
+   </property>
+   <property name="toolTip">
+    <string notr="true">Load</string>
+   </property>
+  </action>
+  <action name="actionLastImage">
+   <property name="icon">
+    <iconset resource="../resource/kirinresource.qrc">
+     <normaloff>:/icons/icons/ic_fast_rewind_white_24dp.png</normaloff>
+     <disabledoff>:/icons/icons/ic_fast_rewind_black_24dp.png</disabledoff>
+     <activeoff>:/icons/icons/ic_fast_rewind_white_24dp.png</activeoff>:/icons/icons/ic_fast_rewind_white_24dp.png</iconset>
+   </property>
+   <property name="text">
+    <string notr="true">Last Image(&amp;L)</string>
+   </property>
+   <property name="iconText">
+    <string notr="true">Last Image</string>
+   </property>
+   <property name="toolTip">
+    <string>Last Image(Up)</string>
+   </property>
+   <property name="statusTip">
+    <string>Last image</string>
+   </property>
+   <property name="whatsThis">
+    <string notr="true"/>
+   </property>
+   <property name="shortcut">
+    <string notr="true">Up</string>
+   </property>
+  </action>
+  <action name="actionNextImage">
+   <property name="icon">
+    <iconset resource="../resource/kirinresource.qrc">
+     <normaloff>:/icons/icons/ic_fast_forward_white_24dp.png</normaloff>
+     <disabledoff>:/icons/icons/ic_fast_forward_black_24dp.png</disabledoff>
+     <activeoff>:/icons/icons/ic_fast_forward_white_24dp.png</activeoff>:/icons/icons/ic_fast_forward_white_24dp.png</iconset>
+   </property>
+   <property name="text">
+    <string notr="true">Next Image(&amp;N)</string>
+   </property>
+   <property name="iconText">
+    <string notr="true">Next Image</string>
+   </property>
+   <property name="toolTip">
+    <string>Next Image(Down)</string>
+   </property>
+   <property name="statusTip">
+    <string>Next image</string>
+   </property>
+   <property name="whatsThis">
+    <string notr="true"/>
+   </property>
+   <property name="shortcut">
+    <string notr="true">Down</string>
+   </property>
+  </action>
+  <action name="actionSaveNext">
+   <property name="icon">
+    <iconset resource="../resource/kirinresource.qrc">
+     <normaloff>:/icons/icons/ic_save_white_24dp.png</normaloff>
+     <disabledoff>:/icons/icons/ic_save_black_24dp.png</disabledoff>
+     <activeoff>:/icons/icons/ic_save_white_24dp.png</activeoff>:/icons/icons/ic_save_white_24dp.png</iconset>
+   </property>
+   <property name="text">
+    <string notr="true">Save and Next(&amp;K)</string>
+   </property>
+   <property name="iconText">
+    <string notr="true">Save and Next</string>
+   </property>
+   <property name="toolTip">
+    <string>Save and Next(Space)</string>
+   </property>
+   <property name="statusTip">
+    <string>Save the labels</string>
+   </property>
+   <property name="whatsThis">
+    <string notr="true"/>
+   </property>
+   <property name="shortcut">
+    <string notr="true">Space</string>
+   </property>
+  </action>
+  <action name="actionSaveCapture">
+   <property name="icon">
+    <iconset resource="../resource/kirinresource.qrc">
+     <normaloff>:/icons/icons/ic_save_white_24dp.png</normaloff>
+     <disabledoff>:/icons/icons/ic_save_black_24dp.png</disabledoff>
+     <activeoff>:/icons/icons/ic_save_white_24dp.png</activeoff>:/icons/icons/ic_save_white_24dp.png</iconset>
+   </property>
+   <property name="text">
+    <string notr="true">Save Capture(&amp;S)</string>
+   </property>
+   <property name="iconText">
+    <string notr="true">Save Capture</string>
+   </property>
+   <property name="toolTip">
+    <string>Save Capture(Ctrl+S)</string>
+   </property>
+   <property name="statusTip">
+    <string>Save image with labels</string>
+   </property>
+   <property name="whatsThis">
+    <string notr="true"/>
+   </property>
+   <property name="shortcut">
+    <string notr="true">Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionCapture">
+   <property name="icon">
+    <iconset resource="../resource/kirinresource.qrc">
+     <normaloff>:/icons/icons/ic_camera_alt_white_24dp.png</normaloff>
+     <disabledoff>:/icons/icons/ic_camera_alt_black_24dp.png</disabledoff>
+     <activeoff>:/icons/icons/ic_camera_alt_white_24dp.png</activeoff>:/icons/icons/ic_camera_alt_white_24dp.png</iconset>
+   </property>
+   <property name="text">
+    <string notr="true">Capture(&amp;P)</string>
+   </property>
+   <property name="iconText">
+    <string notr="true">Capture</string>
+   </property>
+   <property name="toolTip">
+    <string>Capture(Ctrl+P)</string>
+   </property>
+   <property name="statusTip">
+    <string>Capture by camera</string>
+   </property>
+   <property name="whatsThis">
+    <string notr="true"/>
+   </property>
+   <property name="shortcut">
+    <string notr="true">Ctrl+P</string>
+   </property>
+  </action>
+  <action name="actionEASTSet">
+   <property name="icon">
+    <iconset resource="../resource/kirinresource.qrc">
+     <normaloff>:/icons/icons/ic_settings_white_24dp.png</normaloff>
+     <disabledoff>:/icons/icons/ic_settings_black_24dp.png</disabledoff>
+     <activeoff>:/icons/icons/ic_settings_white_24dp.png</activeoff>:/icons/icons/ic_settings_white_24dp.png</iconset>
+   </property>
+   <property name="text">
+    <string notr="true">EASTSet</string>
+   </property>
+   <property name="iconText">
+    <string notr="true">EASTSet</string>
+   </property>
+   <property name="toolTip">
+    <string>EASTSet(Ctrl+E)</string>
+   </property>
+   <property name="statusTip">
+    <string>Set EAST parameter</string>
+   </property>
+   <property name="whatsThis">
+    <string notr="true"/>
+   </property>
+   <property name="shortcut">
+    <string notr="true">Ctrl+E</string>
+   </property>
+  </action>
+  <action name="actionLogo">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../resource/kirinresource.qrc">
+     <normaloff>:/icons/icons/Logo.png</normaloff>
+     <disabledoff>:/icons/icons/Logo.png</disabledoff>
+     <activeoff>:/icons/icons/Logo.png</activeoff>
+     <selectedoff>:/icons/icons/Logo.png</selectedoff>:/icons/icons/Logo.png</iconset>
+   </property>
+   <property name="text">
+    <string notr="true">Logo</string>
+   </property>
+   <property name="iconText">
+    <string notr="true">Logo</string>
+   </property>
+   <property name="toolTip">
+    <string>Kirin Label Assistant</string>
+   </property>
+   <property name="whatsThis">
+    <string notr="true"/>
+   </property>
+   <property name="shortcut">
+    <string notr="true"/>
+   </property>
+  </action>
+  <action name="actionDiscard">
+   <property name="icon">
+    <iconset resource="../resource/kirinresource.qrc">
+     <normaloff>:/icons/icons/ic_folder_open_white_24dp.png</normaloff>:/icons/icons/ic_folder_open_white_24dp.png</iconset>
+   </property>
+   <property name="text">
+    <string notr="true">Discard</string>
+   </property>
+   <property name="iconText">
+    <string notr="true">Discard</string>
+   </property>
+   <property name="toolTip">
+    <string notr="true">Discard</string>
+   </property>
+   <property name="statusTip">
+    <string notr="true"/>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>FrameHeader</class>
+   <extends>QFrame</extends>
+   <header>frameheader.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>WidgetGraphicsView</class>
+   <extends>QGraphicsView</extends>
+   <header>widgetgraphicsview.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="../resource/kirinresource.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>buttonOpen</sender>
+   <signal>clicked()</signal>
+   <receiver>actionOpen</receiver>
+   <slot>trigger()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>61</x>
+     <y>120</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>tableFileList</sender>
+   <signal>itemDoubleClicked(QTableWidgetItem*)</signal>
+   <receiver>actionLoad</receiver>
+   <slot>trigger()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>126</x>
+     <y>335</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonAddLabel</sender>
+   <signal>clicked()</signal>
+   <receiver>actionNewLabel</receiver>
+   <slot>trigger()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1331</x>
+     <y>426</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonDeleteLabel</sender>
+   <signal>clicked()</signal>
+   <receiver>actionDeleteLabel</receiver>
+   <slot>trigger()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1401</x>
+     <y>426</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonClearLabels</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>actionClearLabels</receiver>
+   <slot>trigger()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1471</x>
+     <y>426</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonLastImage</sender>
+   <signal>clicked()</signal>
+   <receiver>actionLastImage</receiver>
+   <slot>trigger()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1360</x>
+     <y>738</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonNextImage</sender>
+   <signal>clicked()</signal>
+   <receiver>actionNextImage</receiver>
+   <slot>trigger()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1360</x>
+     <y>782</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonSaveNext</sender>
+   <signal>clicked()</signal>
+   <receiver>actionSaveNext</receiver>
+   <slot>trigger()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1440</x>
+     <y>757</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonUpdateLabels</sender>
+   <signal>clicked()</signal>
+   <receiver>actionUpdateLabels</receiver>
+   <slot>trigger()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1274</x>
+     <y>426</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>tableFileList</sender>
+   <signal>itemClicked(QTableWidgetItem*)</signal>
+   <receiver>actionLoad</receiver>
+   <slot>trigger()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>126</x>
+     <y>332</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonCapture</sender>
+   <signal>clicked()</signal>
+   <receiver>actionCapture</receiver>
+   <slot>trigger()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1397</x>
+     <y>757</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonFinish</sender>
+   <signal>clicked()</signal>
+   <receiver>actionSaveCapture</receiver>
+   <slot>trigger()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1505</x>
+     <y>757</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonDiscard</sender>
+   <signal>clicked()</signal>
+   <receiver>actionDiscard</receiver>
+   <slot>trigger()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1289</x>
+     <y>757</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

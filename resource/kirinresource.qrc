@@ -1,0 +1,75 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>icons/ic_folder_open_white_24dp.png</file>
+        <file>icons/ic_folder_open_black_24dp.png</file>
+        <file>icons/ic_camera_alt_black_24dp.png</file>
+        <file>icons/ic_camera_alt_white_24dp.png</file>
+        <file>icons/ic_clear_black_24dp.png</file>
+        <file>icons/ic_clear_white_24dp.png</file>
+        <file>icons/ic_delete_black_24dp.png</file>
+        <file>icons/ic_delete_white_24dp.png</file>
+        <file>icons/ic_fast_forward_black_24dp.png</file>
+        <file>icons/ic_fast_forward_white_24dp.png</file>
+        <file>icons/ic_fast_rewind_black_24dp.png</file>
+        <file>icons/ic_fast_rewind_white_24dp.png</file>
+        <file>icons/ic_image_black_24dp.png</file>
+        <file>icons/ic_image_white_24dp.png</file>
+        <file>icons/ic_save_black_24dp.png</file>
+        <file>icons/ic_save_white_24dp.png</file>
+        <file>icons/ic_settings_black_24dp.png</file>
+        <file>icons/ic_settings_overscan_black_24dp.png</file>
+        <file>icons/ic_settings_overscan_white_24dp.png</file>
+        <file>icons/ic_settings_white_24dp.png</file>
+        <file>icons/ic_update_black_24dp.png</file>
+        <file>icons/ic_update_white_24dp.png</file>
+        <file>icons/ic_zoom_in_black_24dp.png</file>
+        <file>icons/ic_zoom_in_white_24dp.png</file>
+        <file>icons/ic_zoom_out_black_24dp.png</file>
+        <file>icons/ic_zoom_out_white_24dp.png</file>
+        <file>icons/ic_library_add_black_24dp.png</file>
+        <file>icons/ic_library_add_white_24dp.png</file>
+        <file>icons/file.png</file>
+        <file>icons/webcam.png</file>
+        <file>icons/camera.png</file>
+        <file>icons/checkmark.png</file>
+        <file>icons/cross.png</file>
+        <file>icons/add.png</file>
+        <file>icons/close.png</file>
+        <file>icons/delete.png</file>
+        <file>icons/east.png</file>
+        <file>icons/ic_navigate_before_black_48dp.png</file>
+        <file>icons/ic_navigate_before_white_48dp.png</file>
+        <file>icons/ic_navigate_next_black_48dp.png</file>
+        <file>icons/ic_navigate_next_white_48dp.png</file>
+        <file>icons/kIRIN.png</file>
+        <file>icons/ic_folder_black_24dp.png</file>
+        <file>icons/ic_folder_white_24dp.png</file>
+        <file>icons/ic_close_white_24dp.png</file>
+        <file>icons/ic_crop_7_5_white_24dp.png</file>
+        <file>icons/ic_crop_square_white_24dp.png</file>
+        <file>icons/ic_remove_white_24dp.png</file>
+        <file>icons/Logo.png</file>
+        <file>icons/arrow-down.png</file>
+        <file>icons/arrow-left.png</file>
+        <file>icons/arrow-right.png</file>
+        <file>icons/ic_info_outline_white_24dp.png</file>
+        <file>icons/ic_palette_white_24dp.png</file>
+        <file>icons/app.ico</file>
+    </qresource>
+    <qresource prefix="/qss">
+        <file>themes/Default-0.qss</file>
+        <file>themes/Default-1.qss</file>
+        <file>themes/Default-2.qss</file>
+        <file>themes/Default-3.qss</file>
+        <file>themes/Default-4.qss</file>
+        <file>themes/Default-5.qss</file>
+        <file>themes/Default-6.qss</file>
+    </qresource>
+    <qresource prefix="/images">
+        <file>images/KirinBackground.png</file>
+    </qresource>
+    <qresource prefix="/translations">
+        <file>translations/kirinui_ch_zn.qm</file>
+        <file>translations/kirinui_en.qm</file>
+    </qresource>
+</RCC>
