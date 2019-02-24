@@ -3,7 +3,7 @@
 # Kirin Label Assistant
 ### A scene text detection label helper
 
-![GitHub](https://img.shields.io/github/license/Joinn99/KirinLabelAssistant.svg?label=License) ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/Joinn99/KirinLabelAssistant.svg) ![OpenCV](https://img.shields.io/badge/OpenCV-4.0.1-red.svg) ![Qt](https://img.shields.io/badge/Qt-5.11.2-brightgreen.svg)
+[![GitHub](https://img.shields.io/github/license/Joinn99/KirinLabelAssistant.svg?label=License)](https://github.com/Joinn99/KirinLabelAssistant/blob/master/LICENSE) [![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/Joinn99/KirinLabelAssistant.svg)](https://github.com/Joinn99/KirinLabelAssistant/blob/master/LICENSE) [![OpenCV](https://img.shields.io/badge/OpenCV-4.0.1-red.svg)](https://opencv.org/) [![Qt](https://img.shields.io/badge/Qt-5.11.2-brightgreen.svg)](https://www.qt.io/)
 ---
 Kirin Label Assistant is a deskop cumputer program which helps creating training set for scene text detection. Users can use the program to label their own images efficiently with the help of the automatic label function, which using [EAST](https://arxiv.org/abs/1704.03155v2) neural network to generate labels automatically. Users only need to correct model's wrong label results. 
 
@@ -76,4 +76,5 @@ $ ./KirinLabelAssistant
 ```
 ## License
 Kirin Label Assistant uses GNU GPL v3.0 License.
+
 Icons are from [Google Material Design Icons](https://github.com/google/material-design-icons) and [iconshock](https://www.iconshock.com/).
