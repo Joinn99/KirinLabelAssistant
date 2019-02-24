@@ -65,13 +65,14 @@ sudo apt-get install qtbase5-dev
 
 Once you finish these two dependencies installation, you can compile the project with
 ```
-$ cd <KirinLabelAssistant>/build>
+$ cd <KirinLabelAssistant_root>
+$ mkdir build && cd build
 $ cmake ..
 $ make
 ```
 And run the program with
 ```
-$ cd <KirinLabelAssistant>/bin>
+$ cd <KirinLabelAssistant_root>/bin
 $ ./KirinLabelAssistant
 ```
 ## License
